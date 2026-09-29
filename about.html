@@ -1,0 +1,382 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Kovilmala | History & Heritage</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: "#183D2B",
+            moss: "#55745A",
+            cream: "#F8F7F0",
+            gold: "#D5B77A"
+          },
+          fontFamily: {
+            sans: ["DM Sans", "sans-serif"],
+            serif: ["Playfair Display", "serif"]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-cream text-gray-800 font-sans">
+
+  <!-- NAVBAR -->
+  <header class="absolute top-0 left-0 w-full z-50 text-white">
+    <nav class="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
+
+      <a href="index.html" class="text-2xl font-serif font-bold">
+        KOVILMALA<span class="text-gold">.</span>
+      </a>
+
+      <div class="hidden lg:flex items-center gap-7 text-sm">
+        <a href="index.html" class="hover:text-gold">Home</a>
+        <a href="about.html" class="text-gold">About</a>
+        <a href="places.html" class="hover:text-gold">Explore</a>
+        <a href="stay.html" class="hover:text-gold">Stay</a>
+        <a href="services.html" class="hover:text-gold">Services</a>
+        <a href="culture.html" class="hover:text-gold">Culture</a>
+        <a href="travel.html" class="hover:text-gold">Travel</a>
+        <a href="contact.html" class="hover:text-gold">Contact</a>
+      </div>
+
+      <a href="travel.html"
+         class="hidden lg:inline-block border border-white/60 rounded-full px-6 py-3 text-sm hover:bg-white hover:text-forest transition">
+        Plan Your Visit ↗
+      </a>
+
+      <button id="menuBtn" class="lg:hidden text-2xl" aria-label="Open menu">
+        ☰
+      </button>
+    </nav>
+
+    <div id="mobileMenu" class="hidden lg:hidden bg-forest/95 px-6 py-5 space-y-4">
+      <a href="index.html" class="block">Home</a>
+      <a href="about.html" class="block text-gold">About</a>
+      <a href="places.html" class="block">Explore</a>
+      <a href="stay.html" class="block">Stay</a>
+      <a href="services.html" class="block">Services</a>
+      <a href="culture.html" class="block">Culture</a>
+      <a href="travel.html" class="block">Travel Guide</a>
+      <a href="contact.html" class="block">Contact</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative h-[75vh] min-h-[520px] flex items-center text-white"
+    style="background: linear-gradient(90deg, rgba(10,30,20,.82), rgba(10,30,20,.25)), url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=2200&q=90') center/cover;">
+
+    <div class="max-w-7xl mx-auto px-6 w-full pt-24 relative">
+
+      <p class="uppercase tracking-[0.3em] text-sm text-gold mb-6">
+        Discover our story
+      </p>
+
+      <h1 class="font-serif text-6xl md:text-8xl leading-tight mb-7">
+        About<br>
+        <span class="italic text-gold">Kovilmala.</span>
+      </h1>
+
+      <p class="text-lg md:text-xl text-white/85 max-w-2xl leading-relaxed">
+        A place shaped by history, culture, community, and
+        the natural beauty of Kerala's highlands.
+      </p>
+    </div>
+
+    <div class="absolute bottom-8 left-6 md:left-12 text-sm text-white/80">
+      <a href="index.html" class="hover:text-gold">Home</a>
+      <span class="mx-2">/</span>
+      About Kovilmala
+    </div>
+  </section>
+
+  <!-- INTRODUCTION -->
+  <section class="py-24 md:py-32">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+
+      <div class="relative">
+        <img
+          src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=1100&q=85"
+          alt="Natural landscape"
+          class="rounded-2xl w-full h-[480px] object-cover">
+
+        <div class="absolute -bottom-6 -right-3 md:-right-6 bg-forest text-white p-7 rounded-xl">
+          <p class="text-gold text-sm uppercase tracking-widest mb-2">
+            Discover
+          </p>
+          <p class="font-serif text-3xl">
+            The heart<br>of Idukki
+          </p>
+        </div>
+      </div>
+
+      <div class="pt-8 md:pt-0">
+
+        <p class="text-moss uppercase tracking-[0.25em] text-sm font-semibold mb-5">
+          Welcome to our locality
+        </p>
+
+        <h2 class="font-serif text-4xl md:text-5xl text-forest leading-tight mb-7">
+          A land of nature,<br>people & stories.
+        </h2>
+
+        <p class="text-gray-600 leading-8 mb-5">
+          Kovilmala, located in the Idukki district of Kerala,
+          is known for its association with the Mannan community
+          and its distinctive cultural heritage.
+        </p>
+
+        <p class="text-gray-600 leading-8 mb-5">
+          Surrounded by the landscapes of the Western Ghats,
+          the locality offers a glimpse into the region's
+          natural environment and community life.
+        </p>
+
+        <p class="text-gray-600 leading-8">
+          This is a place where traditions, local identity,
+          and everyday life come together to shape a unique story.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HISTORY -->
+  <section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+
+      <div>
+        <p class="text-moss uppercase tracking-[0.25em] text-sm font-semibold mb-5">
+          Our past
+        </p>
+
+        <h2 class="font-serif text-4xl md:text-5xl text-forest leading-tight mb-7">
+          A history rooted<br>in tradition.
+        </h2>
+
+        <p class="text-gray-600 leading-8 mb-6">
+          Kovilmala is closely associated with the Mannan
+          community, an indigenous community of Kerala with
+          its own cultural practices, traditions, and history.
+        </p>
+
+        <p class="text-gray-600 leading-8 mb-6">
+          The community is known for its traditional leadership
+          system and its historical connection to the region.
+          These traditions form an important part of Kovilmala's
+          cultural identity.
+        </p>
+
+        <p class="text-gray-600 leading-8">
+          The detailed history of the locality can be explored
+          through oral histories, community accounts, and
+          documented historical sources.
+        </p>
+      </div>
+
+      <img
+        src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1100&q=85"
+        alt="Forest landscape"
+        class="rounded-2xl w-full h-[460px] object-cover">
+    </div>
+  </section>
+
+  <!-- CULTURAL HERITAGE -->
+  <section class="py-24 bg-forest text-white">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="max-w-3xl mb-14">
+        <p class="text-gold uppercase tracking-[0.25em] text-sm mb-5">
+          Culture & identity
+        </p>
+
+        <h2 class="font-serif text-4xl md:text-6xl leading-tight mb-7">
+          A heritage that<br>lives through generations.
+        </h2>
+
+        <p class="text-white/70 leading-8">
+          Explore the traditions, values, and cultural practices
+          that contribute to the identity of Kovilmala and its people.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-7">
+
+        <div class="border border-white/15 rounded-2xl p-8 hover:bg-white/5 transition">
+          <div class="text-gold text-3xl mb-6">01</div>
+          <h3 class="font-serif text-2xl mb-5">Traditional Heritage</h3>
+          <p class="text-white/70 leading-7">
+            Discover the customs, community traditions,
+            and cultural practices passed down through generations.
+          </p>
+        </div>
+
+        <div class="border border-white/15 rounded-2xl p-8 hover:bg-white/5 transition">
+          <div class="text-gold text-3xl mb-6">02</div>
+          <h3 class="font-serif text-2xl mb-5">Community & People</h3>
+          <p class="text-white/70 leading-7">
+            Learn about the people, their way of life,
+            and the community connections that shape the locality.
+          </p>
+        </div>
+
+        <div class="border border-white/15 rounded-2xl p-8 hover:bg-white/5 transition">
+          <div class="text-gold text-3xl mb-6">03</div>
+          <h3 class="font-serif text-2xl mb-5">Stories & Memories</h3>
+          <p class="text-white/70 leading-7">
+            Preserve local stories, memories, and experiences
+            that help future generations understand the past.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION -->
+  <section class="py-24">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+
+      <div>
+        <p class="text-moss uppercase tracking-[0.25em] text-sm font-semibold mb-5">
+          Find us
+        </p>
+
+        <h2 class="font-serif text-4xl md:text-5xl text-forest mb-7">
+          Located in the<br>highlands of Kerala.
+        </h2>
+
+        <p class="text-gray-600 leading-8 mb-8">
+          Kovilmala is situated in Idukki district, Kerala,
+          in the region surrounding Kattappana.
+          Its location makes it a starting point for exploring
+          the surrounding highlands and nearby destinations.
+        </p>
+
+        <a href="https://www.google.com/maps/search/?api=1&query=Kovilmala+Kerala"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="inline-block bg-forest text-white px-8 py-4 rounded-full hover:bg-moss transition">
+          View Location on Maps ↗
+        </a>
+      </div>
+
+      <div class="rounded-2xl overflow-hidden shadow-md bg-white p-3">
+        <iframe
+          title="Map showing Kovilmala"
+          src="https://maps.google.com/maps?q=Kovilmala%2C%20Kerala&t=&z=12&ie=UTF8&iwloc=&output=embed"
+          class="w-full h-[420px] rounded-xl border-0"
+          loading="lazy"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-24 bg-[#EDEFE5] text-center px-6">
+
+    <p class="text-moss uppercase tracking-[0.25em] text-sm mb-6">
+      Discover more
+    </p>
+
+    <h2 class="font-serif text-4xl md:text-6xl text-forest mb-7">
+      Your journey starts here.
+    </h2>
+
+    <p class="text-gray-600 max-w-xl mx-auto leading-8 mb-10">
+      Explore the attractions, discover local experiences,
+      and learn more about the beauty of Kovilmala.
+    </p>
+
+    <a href="places.html"
+       class="inline-block bg-forest text-white px-9 py-4 rounded-full font-semibold hover:bg-moss transition">
+      Explore Places to Visit ↗
+    </a>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#102B1E] text-white/70 py-12">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-10 pb-10">
+
+        <div>
+          <a href="index.html" class="text-2xl font-serif font-bold text-white">
+            KOVILMALA<span class="text-gold">.</span>
+          </a>
+          <p class="mt-5 leading-7 text-sm">
+            Discover the beauty, culture, and stories
+            of Kovilmala, Idukki, Kerala.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-white font-semibold mb-5">Explore</h3>
+          <div class="space-y-3 text-sm">
+            <a href="about.html" class="block hover:text-gold">About Kovilmala</a>
+            <a href="places.html" class="block hover:text-gold">Places to Visit</a>
+            <a href="culture.html" class="block hover:text-gold">Culture & Heritage</a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-white font-semibold mb-5">Discover</h3>
+          <div class="space-y-3 text-sm">
+            <a href="stay.html" class="block hover:text-gold">Accommodation</a>
+            <a href="services.html" class="block hover:text-gold">Local Services</a>
+            <a href="travel.html" class="block hover:text-gold">Travel Guide</a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-white font-semibold mb-5">Get in Touch</h3>
+          <p class="text-sm leading-7">
+            Kovilmala<br>Idukki, Kerala, India
+          </p>
+          <a href="contact.html" class="inline-block mt-4 text-gold text-sm">
+            Contact Us ↗
+          </a>
+        </div>
+
+      </div>
+
+      <div class="border-t border-white/10 pt-7 flex flex-col md:flex-row justify-between gap-4 text-xs">
+        <p>© 2026 Kovilmala. All rights reserved.</p>
+        <p>Made with love for the beauty of Idukki.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- MOBILE MENU SCRIPT -->
+  <script>
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+
+    mobileMenu.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,411 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Places to Visit | Kovilmala</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: "#183D2B",
+            moss: "#55745A",
+            cream: "#F8F7F0",
+            gold: "#D5B77A"
+          },
+          fontFamily: {
+            sans: ["DM Sans", "sans-serif"],
+            serif: ["Playfair Display", "serif"]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-cream text-gray-800 font-sans">
+
+  <!-- NAVBAR -->
+  <header class="absolute top-0 left-0 w-full z-50 text-white">
+    <nav class="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
+
+      <a href="index.html" class="text-2xl font-serif font-bold">
+        KOVILMALA<span class="text-gold">.</span>
+      </a>
+
+      <div class="hidden lg:flex items-center gap-7 text-sm">
+        <a href="index.html" class="hover:text-gold">Home</a>
+        <a href="about.html" class="hover:text-gold">About</a>
+        <a href="places.html" class="text-gold">Explore</a>
+        <a href="stay.html" class="hover:text-gold">Stay</a>
+        <a href="services.html" class="hover:text-gold">Services</a>
+        <a href="culture.html" class="hover:text-gold">Culture</a>
+        <a href="travel.html" class="hover:text-gold">Travel</a>
+        <a href="contact.html" class="hover:text-gold">Contact</a>
+      </div>
+
+      <a href="travel.html"
+         class="hidden lg:inline-block border border-white/60 rounded-full px-6 py-3 text-sm hover:bg-white hover:text-forest transition">
+        Plan Your Visit ↗
+      </a>
+
+      <button id="menuBtn" class="lg:hidden text-2xl" aria-label="Open menu">
+        ☰
+      </button>
+    </nav>
+
+    <div id="mobileMenu" class="hidden lg:hidden bg-forest/95 px-6 py-5 space-y-4">
+      <a href="index.html" class="block">Home</a>
+      <a href="about.html" class="block">About</a>
+      <a href="places.html" class="block text-gold">Explore</a>
+      <a href="stay.html" class="block">Stay</a>
+      <a href="services.html" class="block">Services</a>
+      <a href="culture.html" class="block">Culture</a>
+      <a href="travel.html" class="block">Travel Guide</a>
+      <a href="contact.html" class="block">Contact</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative h-[70vh] min-h-[500px] flex items-center text-white"
+    style="background: linear-gradient(90deg, rgba(10,30,20,.82), rgba(10,30,20,.2)), url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=2200&q=90') center/cover;">
+
+    <div class="max-w-7xl mx-auto px-6 w-full pt-24 relative">
+
+      <p class="uppercase tracking-[0.3em] text-sm text-gold mb-6">
+        Explore the surroundings
+      </p>
+
+      <h1 class="font-serif text-6xl md:text-8xl leading-tight mb-7">
+        Places to<br>
+        <span class="italic text-gold">Discover.</span>
+      </h1>
+
+      <p class="text-lg md:text-xl text-white/85 max-w-2xl leading-relaxed">
+        From peaceful green landscapes to cultural landmarks,
+        discover the places that make this region special.
+      </p>
+
+    </div>
+
+    <div class="absolute bottom-8 left-6 md:left-12 text-sm text-white/80">
+      <a href="index.html" class="hover:text-gold">Home</a>
+      <span class="mx-2">/</span>
+      Places to Visit
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <p class="text-moss uppercase tracking-[0.25em] text-sm font-semibold mb-5">
+        Find your next destination
+      </p>
+
+      <h2 class="font-serif text-4xl md:text-5xl text-forest mb-7">
+        Explore the beauty of Idukki.
+      </h2>
+
+      <p class="text-gray-600 max-w-2xl mx-auto leading-8">
+        Discover scenic viewpoints, natural attractions, cultural
+        landmarks, and nearby destinations to make your visit memorable.
+      </p>
+    </div>
+  </section>
+
+  <!-- CATEGORY FILTERS -->
+  <section class="pb-10">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="flex flex-wrap justify-center gap-3" id="filters">
+
+        <button data-filter="all"
+          class="filter-btn bg-forest text-white px-6 py-3 rounded-full text-sm">
+          All Places
+        </button>
+
+        <button data-filter="nature"
+          class="filter-btn border border-forest/20 px-6 py-3 rounded-full text-sm hover:bg-forest hover:text-white transition">
+          Nature
+        </button>
+
+        <button data-filter="adventure"
+          class="filter-btn border border-forest/20 px-6 py-3 rounded-full text-sm hover:bg-forest hover:text-white transition">
+          Adventure
+        </button>
+
+        <button data-filter="heritage"
+          class="filter-btn border border-forest/20 px-6 py-3 rounded-full text-sm hover:bg-forest hover:text-white transition">
+          Heritage
+        </button>
+
+        <button data-filter="nearby"
+          class="filter-btn border border-forest/20 px-6 py-3 rounded-full text-sm hover:bg-forest hover:text-white transition">
+          Nearby
+        </button>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PLACES GRID -->
+  <section class="pb-24">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div id="placesGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- PLACE 1 -->
+        <article data-category="nature" class="place-card bg-white rounded-2xl overflow-hidden shadow-sm group">
+          <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=85"
+                 alt="Mountain landscape"
+                 class="w-full h-64 object-cover group-hover:scale-105 transition duration-700">
+            <span class="absolute top-4 left-4 bg-white/90 text-forest text-xs px-4 py-2 rounded-full">Nature</span>
+          </div>
+          <div class="p-7">
+            <h3 class="font-serif text-2xl text-forest mb-3">Scenic Viewpoints</h3>
+            <p class="text-gray-500 leading-7 mb-6">
+              Enjoy panoramic views of the hills and surrounding landscapes.
+            </p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Kovilmala+viewpoints"
+               target="_blank" rel="noopener noreferrer"
+               class="text-forest font-semibold text-sm border-b border-gold pb-2">
+              View on Map ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- PLACE 2 -->
+        <article data-category="nature" class="place-card bg-white rounded-2xl overflow-hidden shadow-sm group">
+          <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=900&q=85"
+                 alt="Green forest"
+                 class="w-full h-64 object-cover group-hover:scale-105 transition duration-700">
+            <span class="absolute top-4 left-4 bg-white/90 text-forest text-xs px-4 py-2 rounded-full">Nature</span>
+          </div>
+          <div class="p-7">
+            <h3 class="font-serif text-2xl text-forest mb-3">Green Forest Trails</h3>
+            <p class="text-gray-500 leading-7 mb-6">
+              Discover peaceful greenery and natural surroundings.
+            </p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Kovilmala+forest"
+               target="_blank" rel="noopener noreferrer"
+               class="text-forest font-semibold text-sm border-b border-gold pb-2">
+              View on Map ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- PLACE 3 -->
+        <article data-category="adventure" class="place-card bg-white rounded-2xl overflow-hidden shadow-sm group">
+          <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=900&q=85"
+                 alt="Hiking trail"
+                 class="w-full h-64 object-cover group-hover:scale-105 transition duration-700">
+            <span class="absolute top-4 left-4 bg-white/90 text-forest text-xs px-4 py-2 rounded-full">Adventure</span>
+          </div>
+          <div class="p-7">
+            <h3 class="font-serif text-2xl text-forest mb-3">Nature Walks</h3>
+            <p class="text-gray-500 leading-7 mb-6">
+              Experience the outdoors and explore the landscape on foot.
+            </p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Kovilmala+Kerala"
+               target="_blank" rel="noopener noreferrer"
+               class="text-forest font-semibold text-sm border-b border-gold pb-2">
+              View on Map ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- PLACE 4 -->
+        <article data-category="heritage" class="place-card bg-white rounded-2xl overflow-hidden shadow-sm group">
+          <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=900&q=85"
+                 alt="Architectural landmark"
+                 class="w-full h-64 object-cover group-hover:scale-105 transition duration-700">
+            <span class="absolute top-4 left-4 bg-white/90 text-forest text-xs px-4 py-2 rounded-full">Heritage</span>
+          </div>
+          <div class="p-7">
+            <h3 class="font-serif text-2xl text-forest mb-3">Cultural Landmarks</h3>
+            <p class="text-gray-500 leading-7 mb-6">
+              Explore local landmarks and learn about the region's heritage.
+            </p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Kovilmala+Kerala"
+               target="_blank" rel="noopener noreferrer"
+               class="text-forest font-semibold text-sm border-b border-gold pb-2">
+              View on Map ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- PLACE 5 -->
+        <article data-category="nearby" class="place-card bg-white rounded-2xl overflow-hidden shadow-sm group">
+          <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=85"
+                 alt="Scenic outdoor landscape"
+                 class="w-full h-64 object-cover group-hover:scale-105 transition duration-700">
+            <span class="absolute top-4 left-4 bg-white/90 text-forest text-xs px-4 py-2 rounded-full">Nearby</span>
+          </div>
+          <div class="p-7">
+            <h3 class="font-serif text-2xl text-forest mb-3">Nearby Hill Destinations</h3>
+            <p class="text-gray-500 leading-7 mb-6">
+              Discover beautiful landscapes and destinations around the region.
+            </p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Tourist+places+near+Kattappana"
+               target="_blank" rel="noopener noreferrer"
+               class="text-forest font-semibold text-sm border-b border-gold pb-2">
+              Explore Nearby ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- PLACE 6 -->
+        <article data-category="nearby" class="place-card bg-white rounded-2xl overflow-hidden shadow-sm group">
+          <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=900&q=85"
+                 alt="Mountain lake landscape"
+                 class="w-full h-64 object-cover group-hover:scale-105 transition duration-700">
+            <span class="absolute top-4 left-4 bg-white/90 text-forest text-xs px-4 py-2 rounded-full">Nearby</span>
+          </div>
+          <div class="p-7">
+            <h3 class="font-serif text-2xl text-forest mb-3">Scenic Nature Escapes</h3>
+            <p class="text-gray-500 leading-7 mb-6">
+              Find relaxing outdoor destinations for a peaceful day trip.
+            </p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Tourist+places+near+Kovilmala"
+               target="_blank" rel="noopener noreferrer"
+               class="text-forest font-semibold text-sm border-b border-gold pb-2">
+              Explore Nearby ↗
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-24 bg-forest text-white text-center px-6">
+    <p class="text-gold uppercase tracking-[0.25em] text-sm mb-6">
+      Plan your journey
+    </p>
+
+    <h2 class="font-serif text-4xl md:text-6xl mb-7">
+      Your next adventure awaits.
+    </h2>
+
+    <p class="text-white/70 max-w-xl mx-auto leading-8 mb-10">
+      Discover the beauty of Kovilmala and explore the
+      surrounding destinations at your own pace.
+    </p>
+
+    <a href="travel.html"
+       class="inline-block bg-gold text-forest px-9 py-4 rounded-full font-semibold hover:bg-white transition">
+      Travel Guide ↗
+    </a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#102B1E] text-white/70 py-12">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-10 pb-10">
+
+        <div>
+          <a href="index.html" class="text-2xl font-serif font-bold text-white">
+            KOVILMALA<span class="text-gold">.</span>
+          </a>
+          <p class="mt-5 leading-7 text-sm">
+            Discover the beauty, culture, and stories
+            of Kovilmala, Idukki, Kerala.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-white font-semibold mb-5">Explore</h3>
+          <div class="space-y-3 text-sm">
+            <a href="about.html" class="block hover:text-gold">About Kovilmala</a>
+            <a href="places.html" class="block hover:text-gold">Places to Visit</a>
+            <a href="culture.html" class="block hover:text-gold">Culture & Heritage</a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-white font-semibold mb-5">Discover</h3>
+          <div class="space-y-3 text-sm">
+            <a href="stay.html" class="block hover:text-gold">Accommodation</a>
+            <a href="services.html" class="block hover:text-gold">Local Services</a>
+            <a href="travel.html" class="block hover:text-gold">Travel Guide</a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-white font-semibold mb-5">Get in Touch</h3>
+          <p class="text-sm leading-7">
+            Kovilmala<br>Idukki, Kerala, India
+          </p>
+          <a href="contact.html" class="inline-block mt-4 text-gold text-sm">
+            Contact Us ↗
+          </a>
+        </div>
+
+      </div>
+
+      <div class="border-t border-white/10 pt-7 flex flex-col md:flex-row justify-between gap-4 text-xs">
+        <p>© 2026 Kovilmala. All rights reserved.</p>
+        <p>Made with love for the beauty of Idukki.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE MENU -->
+  <script>
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+
+    mobileMenu.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+      });
+    });
+
+    // Category filtering
+    const filterButtons = document.querySelectorAll(".filter-btn");
+    const placeCards = document.querySelectorAll(".place-card");
+
+    filterButtons.forEach(button => {
+      button.addEventListener("click", () => {
+        const filter = button.dataset.filter;
+
+        filterButtons.forEach(btn => {
+          btn.classList.remove("bg-forest", "text-white");
+          btn.classList.add("border", "border-forest/20");
+        });
+
+        button.classList.add("bg-forest", "text-white");
+        button.classList.remove("border", "border-forest/20");
+
+        placeCards.forEach(card => {
+          const category = card.dataset.category;
+          card.classList.toggle(
+            "hidden",
+            filter !== "all" && category !== filter
+          );
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

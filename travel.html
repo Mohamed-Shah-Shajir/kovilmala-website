@@ -1,0 +1,304 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel & How to Reach | Kovilmala Tourism</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: "#183D2B",
+            moss: "#55745A",
+            cream: "#F8F7F0",
+            gold: "#D5B77A"
+          },
+          fontFamily: {
+            sans: ["DM Sans", "sans-serif"],
+            display: ["Playfair Display", "serif"]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-cream text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-forest text-white sticky top-0 z-50 shadow-lg">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-display font-bold">
+        Kovilmala<span class="text-gold">.</span>
+      </a>
+
+      <button id="menuBtn" class="md:hidden text-2xl" aria-label="Open menu">☰</button>
+
+      <div class="hidden md:flex gap-7 items-center text-sm">
+        <a href="index.html" class="hover:text-gold">Home</a>
+        <a href="about.html" class="hover:text-gold">About</a>
+        <a href="places.html" class="hover:text-gold">Places</a>
+        <a href="stay.html" class="hover:text-gold">Stay</a>
+        <a href="services.html" class="hover:text-gold">Services</a>
+        <a href="culture.html" class="hover:text-gold">Culture</a>
+        <a href="travel.html" class="text-gold font-semibold">Travel</a>
+        <a href="contact.html" class="bg-gold text-forest px-5 py-2 rounded-full font-semibold hover:bg-white transition">Contact</a>
+      </div>
+    </div>
+
+    <div id="mobileMenu" class="hidden md:hidden px-6 pb-5 space-y-4 text-sm">
+      <a href="index.html" class="block">Home</a>
+      <a href="about.html" class="block">About</a>
+      <a href="places.html" class="block">Places</a>
+      <a href="stay.html" class="block">Stay</a>
+      <a href="services.html" class="block">Services</a>
+      <a href="culture.html" class="block">Culture</a>
+      <a href="travel.html" class="block text-gold">Travel</a>
+      <a href="contact.html" class="block">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative h-[65vh] min-h-[450px] flex items-center justify-center text-white">
+    <img
+      src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=2000&q=85"
+      alt="Mountain landscape"
+      class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-black/55"></div>
+
+    <div class="relative text-center px-6 max-w-3xl">
+      <p class="text-gold uppercase tracking-[0.3em] text-sm mb-5">Travel Guide</p>
+      <h1 class="text-5xl md:text-7xl font-display mb-6">The Journey to<br>Kovilmala</h1>
+      <p class="text-lg text-gray-100 leading-8">
+        Plan your journey through the scenic high ranges of Idukki
+        and discover the natural beauty of Kovilmala.
+      </p>
+    </div>
+  </section>
+
+  <!-- Intro -->
+  <section class="py-20 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <p class="text-moss uppercase tracking-widest text-sm mb-4">Plan your trip</p>
+      <h2 class="text-4xl md:text-5xl font-display text-forest mb-6">
+        Getting to Kovilmala
+      </h2>
+      <p class="text-gray-600 leading-8">
+        Kovilmala is in the Idukki region of Kerala. You can plan your visit
+        by road, use public transportation to reach nearby towns, and arrange
+        local transport for the final stretch of your journey.
+      </p>
+    </div>
+  </section>
+
+  <!-- Transport Options -->
+  <section class="pb-24 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Road -->
+        <article class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition">
+          <div class="w-16 h-16 rounded-full bg-[#EAEDE3] flex items-center justify-center text-3xl mb-6">🚗</div>
+          <h3 class="text-2xl font-display text-forest mb-4">By Road</h3>
+          <p class="text-gray-600 text-sm leading-7 mb-5">
+            Travel by car or taxi through the scenic roads of Idukki.
+            Check road conditions and your route before starting the journey.
+          </p>
+          <a href="https://www.google.com/maps/search/?api=1&query=Kovilmala+Kerala"
+             target="_blank" rel="noopener noreferrer"
+             class="text-forest font-semibold border-b border-gold pb-1">
+            Open Google Maps →
+          </a>
+        </article>
+
+        <!-- Bus -->
+        <article class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition">
+          <div class="w-16 h-16 rounded-full bg-[#EAEDE3] flex items-center justify-center text-3xl mb-6">🚌</div>
+          <h3 class="text-2xl font-display text-forest mb-4">By Bus</h3>
+          <p class="text-gray-600 text-sm leading-7 mb-5">
+            Use public or private bus services to reach a nearby town.
+            Check current routes, schedules, and onward transport availability.
+          </p>
+          <a href="https://www.google.com/maps/search/?api=1&query=Bus+stations+near+Kovilmala+Kerala"
+             target="_blank" rel="noopener noreferrer"
+             class="text-forest font-semibold border-b border-gold pb-1">
+            Find Nearby Bus Stations →
+          </a>
+        </article>
+
+        <!-- Train -->
+        <article class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition">
+          <div class="w-16 h-16 rounded-full bg-[#EAEDE3] flex items-center justify-center text-3xl mb-6">🚆</div>
+          <h3 class="text-2xl font-display text-forest mb-4">By Train</h3>
+          <p class="text-gray-600 text-sm leading-7 mb-5">
+            Idukki does not have a major railway station serving Kovilmala
+            directly. Plan a train journey to a suitable nearby railhead,
+            then continue by road.
+          </p>
+          <a href="https://www.google.com/maps/search/?api=1&query=Railway+stations+near+Kovilmala+Kerala"
+             target="_blank" rel="noopener noreferrer"
+             class="text-forest font-semibold border-b border-gold pb-1">
+            Find Railway Stations →
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Map and Directions -->
+  <section class="bg-[#EAEDE3] py-24 px-6">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <p class="text-moss uppercase tracking-widest text-sm mb-4">Find your route</p>
+        <h2 class="text-4xl md:text-5xl font-display text-forest mb-6">
+          Explore the Route
+        </h2>
+        <p class="text-gray-600 leading-8 mb-6">
+          Use Google Maps to check directions, travel time, and nearby
+          landmarks. Confirm the exact destination before beginning your trip.
+        </p>
+
+        <a href="https://www.google.com/maps/search/?api=1&query=Kovilmala+Kerala"
+           target="_blank" rel="noopener noreferrer"
+           class="inline-block bg-forest text-white px-8 py-4 rounded-full font-semibold hover:bg-moss transition">
+          Get Directions
+        </a>
+      </div>
+
+      <div class="rounded-2xl overflow-hidden shadow-lg h-[400px]">
+        <iframe
+          src="https://maps.google.com/maps?q=Kovilmala%2C%20Kerala&t=&z=10&ie=UTF8&iwloc=&output=embed"
+          width="100%"
+          height="100%"
+          style="border:0;"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Map showing Kovilmala">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Travel Tips -->
+  <section class="py-24 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-14">
+        <p class="text-moss uppercase tracking-widest text-sm mb-4">Travel smart</p>
+        <h2 class="text-4xl md:text-5xl font-display text-forest">
+          Tips for Your Journey
+        </h2>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <div class="bg-white rounded-2xl p-7 shadow-sm">
+          <div class="text-3xl mb-4">🌦️</div>
+          <h3 class="text-xl font-display text-forest mb-3">Check the Weather</h3>
+          <p class="text-gray-600 text-sm leading-7">
+            Check forecasts before traveling, especially during the monsoon.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-7 shadow-sm">
+          <div class="text-3xl mb-4">🎒</div>
+          <h3 class="text-xl font-display text-forest mb-3">Pack Smart</h3>
+          <p class="text-gray-600 text-sm leading-7">
+            Carry comfortable footwear, suitable clothing, and essential items.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-7 shadow-sm">
+          <div class="text-3xl mb-4">🚙</div>
+          <h3 class="text-xl font-display text-forest mb-3">Plan Transport</h3>
+          <p class="text-gray-600 text-sm leading-7">
+            Arrange local transport in advance if your destination is remote.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-7 shadow-sm">
+          <div class="text-3xl mb-4">🌿</div>
+          <h3 class="text-xl font-display text-forest mb-3">Travel Responsibly</h3>
+          <p class="text-gray-600 text-sm leading-7">
+            Keep the surroundings clean and respect local communities and nature.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-forest text-white py-20 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <p class="text-gold uppercase tracking-widest text-sm mb-4">Your next adventure</p>
+      <h2 class="text-4xl md:text-5xl font-display mb-6">
+        Start Planning Your Visit
+      </h2>
+      <p class="text-gray-300 leading-7 mb-8">
+        Explore places to visit, find accommodation, and plan a memorable
+        trip to Kovilmala.
+      </p>
+      <a href="contact.html" class="inline-block bg-gold text-forest px-8 py-4 rounded-full font-semibold hover:bg-white transition">
+        Contact Us
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#10291D] text-gray-300 px-6 py-12">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-10">
+      <div>
+        <h2 class="text-3xl font-display text-white mb-4">
+          Kovilmala<span class="text-gold">.</span>
+        </h2>
+        <p class="text-sm leading-7 text-gray-400">
+          Discover the beauty, culture, and natural charm of Kovilmala,
+          Idukki, Kerala.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="text-white font-semibold mb-4">Quick Links</h3>
+        <div class="space-y-2 text-sm">
+          <a href="about.html" class="block hover:text-gold">About</a>
+          <a href="places.html" class="block hover:text-gold">Places</a>
+          <a href="stay.html" class="block hover:text-gold">Stay</a>
+          <a href="services.html" class="block hover:text-gold">Services</a>
+          <a href="culture.html" class="block hover:text-gold">Culture</a>
+          <a href="contact.html" class="block hover:text-gold">Contact</a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="text-white font-semibold mb-4">Explore Kovilmala</h3>
+        <p class="text-sm text-gray-400 leading-7">
+          Experience the landscapes, traditions, and hospitality of
+          Kerala's beautiful high ranges.
+        </p>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto border-t border-white/10 mt-10 pt-6 text-center text-xs text-gray-500">
+      © 2026 Kovilmala Tourism. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- Mobile Menu -->
+  <script>
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+
+</body>
+</html>

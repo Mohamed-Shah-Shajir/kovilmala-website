@@ -1,0 +1,385 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kovilmala | Discover Idukki</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: "#183D2B",
+            moss: "#55745A",
+            cream: "#F8F7F0",
+            gold: "#D5B77A"
+          },
+          fontFamily: {
+            sans: ["DM Sans", "sans-serif"],
+            serif: ["Playfair Display", "serif"]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-cream text-gray-800 font-sans">
+
+  <!-- NAVBAR -->
+  <header class="absolute top-0 left-0 w-full z-50 text-white">
+    <nav class="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
+
+      <a href="index.html" class="text-2xl font-serif font-bold">
+        KOVILMALA<span class="text-gold">.</span>
+      </a>
+
+      <div class="hidden lg:flex items-center gap-7 text-sm">
+        <a href="index.html" class="text-gold">Home</a>
+        <a href="about.html" class="hover:text-gold">About</a>
+        <a href="places.html" class="hover:text-gold">Explore</a>
+        <a href="stay.html" class="hover:text-gold">Stay</a>
+        <a href="services.html" class="hover:text-gold">Services</a>
+        <a href="culture.html" class="hover:text-gold">Culture</a>
+        <a href="travel.html" class="hover:text-gold">Travel</a>
+        <a href="contact.html" class="hover:text-gold">Contact</a>
+      </div>
+
+      <a href="travel.html"
+         class="hidden lg:inline-block border border-white/60 rounded-full px-6 py-3 text-sm hover:bg-white hover:text-forest transition">
+        Plan Your Visit ↗
+      </a>
+
+      <button id="menuBtn" class="lg:hidden text-2xl" aria-label="Open menu">
+        ☰
+      </button>
+    </nav>
+
+    <div id="mobileMenu" class="hidden lg:hidden bg-forest/95 px-6 py-5 space-y-4">
+      <a href="index.html" class="block">Home</a>
+      <a href="about.html" class="block">About</a>
+      <a href="places.html" class="block">Explore</a>
+      <a href="stay.html" class="block">Stay</a>
+      <a href="services.html" class="block">Services</a>
+      <a href="culture.html" class="block">Culture</a>
+      <a href="travel.html" class="block">Travel Guide</a>
+      <a href="contact.html" class="block">Contact</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative min-h-screen flex items-center text-white"
+    style="background: linear-gradient(90deg, rgba(10,30,20,.82), rgba(10,30,20,.15)), url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=2200&q=90') center/cover;">
+
+    <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+
+    <div class="relative max-w-7xl mx-auto px-6 w-full pt-24">
+
+      <p class="uppercase tracking-[0.3em] text-sm text-gold mb-6">
+        A hidden gem in the heart of Idukki
+      </p>
+
+      <h1 class="font-serif text-6xl md:text-8xl leading-tight mb-8">
+        Discover<br>
+        <span class="italic text-gold">Kovilmala.</span>
+      </h1>
+
+      <p class="text-lg md:text-xl text-white/85 max-w-xl leading-relaxed mb-10">
+        Where misty hills meet timeless traditions.
+        Explore the beauty, culture, and stories of a
+        remarkable place in Kerala.
+      </p>
+
+      <div class="flex flex-wrap gap-4">
+        <a href="places.html"
+           class="bg-gold text-forest px-8 py-4 rounded-full font-semibold hover:bg-white transition">
+          Explore Kovilmala ↗
+        </a>
+
+        <a href="about.html"
+           class="border border-white/60 px-8 py-4 rounded-full hover:bg-white/10 transition">
+          Discover Our Story
+        </a>
+      </div>
+    </div>
+
+    <div class="absolute bottom-10 left-6 md:left-12 text-sm text-white/80">
+      Kattappana · Idukki · Kerala
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="py-24 md:py-32">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+
+      <img
+        src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=1100&q=85"
+        alt="Green landscape"
+        class="rounded-2xl w-full h-[460px] object-cover">
+
+      <div>
+        <p class="text-moss uppercase tracking-[0.25em] text-sm font-semibold mb-5">
+          Welcome to Kovilmala
+        </p>
+
+        <h2 class="font-serif text-4xl md:text-5xl text-forest leading-tight mb-7">
+          A place where<br>nature meets heritage.
+        </h2>
+
+        <p class="text-gray-600 leading-8 mb-6">
+          Nestled in the beautiful highlands of Idukki, Kovilmala
+          invites you to discover a place rich in natural beauty,
+          cultural traditions, and local stories.
+        </p>
+
+        <a href="about.html"
+           class="inline-block text-forest font-semibold border-b border-gold pb-2">
+          Discover Our Story ↗
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPLORE SECTION -->
+  <section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
+        <div>
+          <p class="text-moss uppercase tracking-[0.25em] text-sm mb-4">
+            Explore the surroundings
+          </p>
+          <h2 class="font-serif text-4xl md:text-5xl text-forest">
+            Places to discover
+          </h2>
+        </div>
+
+        <a href="places.html" class="text-forest font-semibold">
+          View All Places ↗
+        </a>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <article class="group">
+          <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=85"
+               alt="Mountain landscape"
+               class="w-full h-72 object-cover rounded-2xl mb-5 group-hover:scale-[1.02] transition">
+          <p class="text-moss text-sm mb-2">01 · Nature</p>
+          <h3 class="font-serif text-2xl text-forest mb-3">Scenic Viewpoints</h3>
+          <p class="text-gray-500 leading-7">
+            Enjoy the beauty of the hills and surrounding landscapes.
+          </p>
+        </article>
+
+        <article class="group">
+          <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=900&q=85"
+               alt="Green forest"
+               class="w-full h-72 object-cover rounded-2xl mb-5 group-hover:scale-[1.02] transition">
+          <p class="text-moss text-sm mb-2">02 · Outdoors</p>
+          <h3 class="font-serif text-2xl text-forest mb-3">Nature & Green Trails</h3>
+          <p class="text-gray-500 leading-7">
+            Discover lush greenery and peaceful natural surroundings.
+          </p>
+        </article>
+
+        <article class="group">
+          <img src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=900&q=85"
+               alt="Architectural landmark"
+               class="w-full h-72 object-cover rounded-2xl mb-5 group-hover:scale-[1.02] transition">
+          <p class="text-moss text-sm mb-2">03 · Heritage</p>
+          <h3 class="font-serif text-2xl text-forest mb-3">Culture & Landmarks</h3>
+          <p class="text-gray-500 leading-7">
+            Explore the cultural identity and stories of the locality.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CULTURE SECTION -->
+  <section class="py-24 bg-forest text-white">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+
+      <div>
+        <p class="text-gold uppercase tracking-[0.25em] text-sm mb-5">
+          Stories that live on
+        </p>
+
+        <h2 class="font-serif text-4xl md:text-6xl leading-tight mb-8">
+          A heritage<br>worth discovering.
+        </h2>
+
+        <p class="text-white/70 leading-8 mb-8">
+          Discover the Mannan community, its distinctive traditions,
+          cultural heritage, and the stories that shape Kovilmala.
+        </p>
+
+        <a href="culture.html"
+           class="inline-block bg-gold text-forest px-8 py-4 rounded-full font-semibold hover:bg-white transition">
+          Explore Our Heritage ↗
+        </a>
+      </div>
+
+      <img
+        src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1100&q=85"
+        alt="Forest landscape"
+        class="rounded-2xl w-full h-[420px] object-cover">
+    </div>
+  </section>
+
+  <!-- STAY SECTION -->
+  <section class="py-24">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <p class="text-moss uppercase tracking-[0.25em] text-sm mb-4">
+          Make yourself at home
+        </p>
+        <h2 class="font-serif text-4xl md:text-5xl text-forest mb-6">
+          Stay, taste & experience
+        </h2>
+        <p class="text-gray-500 leading-7">
+          Find welcoming places to stay, local food to enjoy,
+          and experiences that bring you closer to the locality.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-7">
+
+        <a href="stay.html" class="bg-white rounded-2xl overflow-hidden shadow-sm group">
+          <img src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&w=900&q=85"
+               alt="Accommodation"
+               class="h-64 w-full object-cover group-hover:scale-[1.02] transition">
+          <div class="p-7">
+            <p class="text-moss text-sm mb-3">01 · Accommodation</p>
+            <h3 class="font-serif text-2xl text-forest mb-4">Homestays & Hotels ↗</h3>
+            <p class="text-gray-500 leading-7">Find comfortable places to stay.</p>
+          </div>
+        </a>
+
+        <a href="services.html" class="bg-white rounded-2xl overflow-hidden shadow-sm group">
+          <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=85"
+               alt="Local food"
+               class="h-64 w-full object-cover group-hover:scale-[1.02] transition">
+          <div class="p-7">
+            <p class="text-moss text-sm mb-3">02 · Food & Dining</p>
+            <h3 class="font-serif text-2xl text-forest mb-4">Local Flavours ↗</h3>
+            <p class="text-gray-500 leading-7">Discover restaurants and local cuisine.</p>
+          </div>
+        </a>
+
+        <a href="travel.html" class="bg-white rounded-2xl overflow-hidden shadow-sm group">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=85"
+               alt="Travel experiences"
+               class="h-64 w-full object-cover group-hover:scale-[1.02] transition">
+          <div class="p-7">
+            <p class="text-moss text-sm mb-3">03 · Experiences</p>
+            <h3 class="font-serif text-2xl text-forest mb-4">Plan Your Journey ↗</h3>
+            <p class="text-gray-500 leading-7">Explore activities and travel information.</p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TRAVEL CTA -->
+  <section class="py-24 bg-[#EDEFE5] text-center px-6">
+    <p class="text-moss uppercase tracking-[0.25em] text-sm mb-6">
+      Your next adventure awaits
+    </p>
+
+    <h2 class="font-serif text-4xl md:text-6xl text-forest mb-7">
+      Come discover Kovilmala.
+    </h2>
+
+    <p class="text-gray-600 max-w-xl mx-auto leading-8 mb-10">
+      Explore its landscapes, discover its heritage,
+      and experience the warmth of the locality.
+    </p>
+
+    <a href="travel.html"
+       class="inline-block bg-forest text-white px-9 py-4 rounded-full font-semibold hover:bg-moss transition">
+      Plan Your Visit ↗
+    </a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#102B1E] text-white/70 py-12">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-10 pb-10">
+
+        <div>
+          <a href="index.html" class="text-2xl font-serif font-bold text-white">
+            KOVILMALA<span class="text-gold">.</span>
+          </a>
+          <p class="mt-5 leading-7 text-sm">
+            Discover the beauty, culture, and stories
+            of Kovilmala, Idukki, Kerala.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-white font-semibold mb-5">Explore</h3>
+          <div class="space-y-3 text-sm">
+            <a href="about.html" class="block hover:text-gold">About Kovilmala</a>
+            <a href="places.html" class="block hover:text-gold">Places to Visit</a>
+            <a href="culture.html" class="block hover:text-gold">Culture & Heritage</a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-white font-semibold mb-5">Discover</h3>
+          <div class="space-y-3 text-sm">
+            <a href="stay.html" class="block hover:text-gold">Accommodation</a>
+            <a href="services.html" class="block hover:text-gold">Local Services</a>
+            <a href="travel.html" class="block hover:text-gold">Travel Guide</a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-white font-semibold mb-5">Get in Touch</h3>
+          <p class="text-sm leading-7">
+            Kovilmala<br>Idukki, Kerala, India
+          </p>
+          <a href="contact.html" class="inline-block mt-4 text-gold text-sm">
+            Contact Us ↗
+          </a>
+        </div>
+
+      </div>
+
+      <div class="border-t border-white/10 pt-7 flex flex-col md:flex-row justify-between gap-4 text-xs">
+        <p>© 2026 Kovilmala. All rights reserved.</p>
+        <p>Made with love for the beauty of Idukki.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE MENU SCRIPT -->
+  <script>
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+
+    mobileMenu.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+      });
+    });
+  </script>
+
+</body>
+</html>

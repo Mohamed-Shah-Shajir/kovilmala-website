@@ -1,0 +1,380 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Kovilmala Tourism</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: "#183D2B",
+            moss: "#55745A",
+            cream: "#F8F7F0",
+            gold: "#D5B77A"
+          },
+          fontFamily: {
+            sans: ["DM Sans", "sans-serif"],
+            display: ["Playfair Display", "serif"]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-cream text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-forest text-white sticky top-0 z-50 shadow-lg">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-display font-bold">
+        Kovilmala<span class="text-gold">.</span>
+      </a>
+
+      <button id="menuBtn" class="md:hidden text-2xl" aria-label="Open menu">☰</button>
+
+      <div class="hidden md:flex gap-7 items-center text-sm">
+        <a href="index.html" class="hover:text-gold">Home</a>
+        <a href="about.html" class="hover:text-gold">About</a>
+        <a href="places.html" class="hover:text-gold">Places</a>
+        <a href="stay.html" class="hover:text-gold">Stay</a>
+        <a href="services.html" class="hover:text-gold">Services</a>
+        <a href="culture.html" class="hover:text-gold">Culture</a>
+        <a href="travel.html" class="hover:text-gold">Travel</a>
+        <a href="contact.html" class="text-gold font-semibold">Contact</a>
+      </div>
+    </div>
+
+    <div id="mobileMenu" class="hidden md:hidden px-6 pb-5 space-y-4 text-sm">
+      <a href="index.html" class="block">Home</a>
+      <a href="about.html" class="block">About</a>
+      <a href="places.html" class="block">Places</a>
+      <a href="stay.html" class="block">Stay</a>
+      <a href="services.html" class="block">Services</a>
+      <a href="culture.html" class="block">Culture</a>
+      <a href="travel.html" class="block">Travel</a>
+      <a href="contact.html" class="block text-gold">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative h-[55vh] min-h-[400px] flex items-center justify-center text-white">
+    <img
+      src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=2000&q=85"
+      alt="Peaceful landscape"
+      class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-black/55"></div>
+
+    <div class="relative text-center px-6 max-w-3xl">
+      <p class="text-gold uppercase tracking-[0.3em] text-sm mb-5">Get in Touch</p>
+      <h1 class="text-5xl md:text-7xl font-display mb-6">Let's Plan Your<br>Kovilmala Trip</h1>
+      <p class="text-lg text-gray-100 leading-8">
+        Have questions about places to visit, accommodation, or local
+        experiences? We'd love to hear from you.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Intro -->
+  <section class="py-16 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <p class="text-moss uppercase tracking-widest text-sm mb-4">We're here to help</p>
+      <h2 class="text-4xl md:text-5xl font-display text-forest mb-6">
+        Get in Touch With Us
+      </h2>
+      <p class="text-gray-600 leading-8">
+        Send us your enquiry, ask about your travel plans, or get help
+        exploring the beautiful region of Kovilmala.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Details + Form -->
+  <section class="pb-24 px-6">
+    <div class="max-w-7xl mx-auto grid lg:grid-cols-5 gap-10">
+
+      <!-- Contact Information -->
+      <div class="lg:col-span-2 bg-forest text-white rounded-2xl p-8 md:p-10">
+        <p class="text-gold uppercase tracking-widest text-sm mb-4">Contact information</p>
+        <h2 class="text-3xl font-display mb-8">Let's Talk</h2>
+
+        <div class="space-y-8">
+
+          <div class="flex gap-4">
+            <div class="text-2xl">📍</div>
+            <div>
+              <h3 class="font-semibold mb-2">Location</h3>
+              <p class="text-gray-300 text-sm leading-7">
+                Kovilmala, Idukki District,<br>Kerala, India
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="text-2xl">📞</div>
+            <div>
+              <h3 class="font-semibold mb-2">Phone</h3>
+              <p class="text-gray-300 text-sm leading-7">
+                Add your official contact number here
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="text-2xl">✉️</div>
+            <div>
+              <h3 class="font-semibold mb-2">Email</h3>
+              <p class="text-gray-300 text-sm leading-7">
+                Add your official email address here
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="text-2xl">🕒</div>
+            <div>
+              <h3 class="font-semibold mb-2">Availability</h3>
+              <p class="text-gray-300 text-sm leading-7">
+                Add your working hours here
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="border-t border-white/20 mt-10 pt-8">
+          <p class="text-sm text-gray-300 mb-5">
+            Prefer messaging? Contact us through WhatsApp.
+          </p>
+
+          <!-- Replace the number with your official WhatsApp number -->
+          <a href="https://wa.me/910000000000"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="inline-block bg-gold text-forest px-6 py-3 rounded-full font-semibold hover:bg-white transition">
+            WhatsApp Us
+          </a>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="lg:col-span-3 bg-white rounded-2xl p-8 md:p-10 shadow-sm">
+        <h2 class="text-3xl font-display text-forest mb-3">Send an Enquiry</h2>
+        <p class="text-gray-500 text-sm mb-8">
+          Fill in the form below and tell us what you're looking for.
+        </p>
+
+        <form id="contactForm" class="space-y-6">
+
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">
+                Full Name *
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="Enter your name"
+                class="w-full border border-gray-200 rounded-xl px-4 py-3 outline-none focus:border-moss">
+            </div>
+
+            <div>
+              <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">
+                Email Address *
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="Enter your email"
+                class="w-full border border-gray-200 rounded-xl px-4 py-3 outline-none focus:border-moss">
+            </div>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <label for="phone" class="block text-sm font-semibold text-gray-700 mb-2">
+                Phone Number
+              </label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Enter your phone number"
+                class="w-full border border-gray-200 rounded-xl px-4 py-3 outline-none focus:border-moss">
+            </div>
+
+            <div>
+              <label for="subject" class="block text-sm font-semibold text-gray-700 mb-2">
+                Enquiry Type *
+              </label>
+              <select
+                id="subject"
+                name="subject"
+                required
+                class="w-full border border-gray-200 rounded-xl px-4 py-3 outline-none focus:border-moss bg-white">
+                <option value="">Select an option</option>
+                <option>General Enquiry</option>
+                <option>Places to Visit</option>
+                <option>Accommodation</option>
+                <option>Travel & Transport</option>
+                <option>Tour Packages</option>
+                <option>Local Experiences</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label for="date" class="block text-sm font-semibold text-gray-700 mb-2">
+              Preferred Visit Date
+            </label>
+            <input
+              type="date"
+              id="date"
+              name="date"
+              class="w-full border border-gray-200 rounded-xl px-4 py-3 outline-none focus:border-moss">
+          </div>
+
+          <div>
+            <label for="message" class="block text-sm font-semibold text-gray-700 mb-2">
+              Your Message *
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              required
+              placeholder="Tell us about your plans..."
+              class="w-full border border-gray-200 rounded-xl px-4 py-3 outline-none focus:border-moss resize-none"></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="w-full bg-forest text-white py-4 rounded-full font-semibold hover:bg-moss transition">
+            Send Enquiry
+          </button>
+
+          <p id="formMessage" class="text-sm text-center text-gray-600"></p>
+
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Map -->
+  <section class="bg-[#EAEDE3] py-20 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-10">
+        <p class="text-moss uppercase tracking-widest text-sm mb-4">Find us</p>
+        <h2 class="text-4xl md:text-5xl font-display text-forest mb-4">
+          Explore Kovilmala
+        </h2>
+        <p class="text-gray-600">
+          Use the map to explore the area and plan your visit.
+        </p>
+      </div>
+
+      <div class="rounded-2xl overflow-hidden shadow-lg h-[400px]">
+        <iframe
+          src="https://maps.google.com/maps?q=Kovilmala%2C%20Kerala&t=&z=10&ie=UTF8&iwloc=&output=embed"
+          width="100%"
+          height="100%"
+          style="border:0;"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Map showing Kovilmala">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-forest text-white py-20 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <p class="text-gold uppercase tracking-widest text-sm mb-4">Discover the high ranges</p>
+      <h2 class="text-4xl md:text-5xl font-display mb-6">
+        We Look Forward to Welcoming You
+      </h2>
+      <p class="text-gray-300 leading-7 mb-8">
+        Start planning your visit and discover the natural beauty
+        and local charm of Kovilmala.
+      </p>
+      <a href="places.html" class="inline-block bg-gold text-forest px-8 py-4 rounded-full font-semibold hover:bg-white transition">
+        Explore Places
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#10291D] text-gray-300 px-6 py-12">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-10">
+      <div>
+        <h2 class="text-3xl font-display text-white mb-4">
+          Kovilmala<span class="text-gold">.</span>
+        </h2>
+        <p class="text-sm leading-7 text-gray-400">
+          Discover the beauty, culture, and natural charm of Kovilmala,
+          Idukki, Kerala.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="text-white font-semibold mb-4">Quick Links</h3>
+        <div class="space-y-2 text-sm">
+          <a href="about.html" class="block hover:text-gold">About</a>
+          <a href="places.html" class="block hover:text-gold">Places</a>
+          <a href="stay.html" class="block hover:text-gold">Stay</a>
+          <a href="services.html" class="block hover:text-gold">Services</a>
+          <a href="culture.html" class="block hover:text-gold">Culture</a>
+          <a href="travel.html" class="block hover:text-gold">Travel</a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="text-white font-semibold mb-4">Explore Kovilmala</h3>
+        <p class="text-sm text-gray-400 leading-7">
+          Experience the landscapes, traditions, and hospitality of
+          Kerala's beautiful high ranges.
+        </p>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto border-t border-white/10 mt-10 pt-6 text-center text-xs text-gray-500">
+      © 2026 Kovilmala Tourism. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+
+    const contactForm = document.getElementById("contactForm");
+    const formMessage = document.getElementById("formMessage");
+
+    contactForm.addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      formMessage.textContent =
+        "This demo form is not connected to a server. Please configure a form service or backend to receive enquiries.";
+    });
+  </script>
+
+</body>
+</html>

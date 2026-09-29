@@ -1,0 +1,345 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Culture & Heritage | Kovilmala Tourism</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: "#183D2B",
+            moss: "#55745A",
+            cream: "#F8F7F0",
+            gold: "#D5B77A"
+          },
+          fontFamily: {
+            sans: ["DM Sans", "sans-serif"],
+            display: ["Playfair Display", "serif"]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-cream text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-forest text-white sticky top-0 z-50 shadow-lg">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-display font-bold">
+        Kovilmala<span class="text-gold">.</span>
+      </a>
+
+      <button id="menuBtn" class="md:hidden text-2xl" aria-label="Open menu">☰</button>
+
+      <div class="hidden md:flex gap-7 items-center text-sm">
+        <a href="index.html" class="hover:text-gold">Home</a>
+        <a href="about.html" class="hover:text-gold">About</a>
+        <a href="places.html" class="hover:text-gold">Places</a>
+        <a href="stay.html" class="hover:text-gold">Stay</a>
+        <a href="services.html" class="hover:text-gold">Services</a>
+        <a href="culture.html" class="text-gold font-semibold">Culture</a>
+        <a href="travel.html" class="hover:text-gold">Travel</a>
+        <a href="contact.html" class="bg-gold text-forest px-5 py-2 rounded-full font-semibold hover:bg-white transition">Contact</a>
+      </div>
+    </div>
+
+    <div id="mobileMenu" class="hidden md:hidden px-6 pb-5 space-y-4 text-sm">
+      <a href="index.html" class="block">Home</a>
+      <a href="about.html" class="block">About</a>
+      <a href="places.html" class="block">Places</a>
+      <a href="stay.html" class="block">Stay</a>
+      <a href="services.html" class="block">Services</a>
+      <a href="culture.html" class="block text-gold">Culture</a>
+      <a href="travel.html" class="block">Travel</a>
+      <a href="contact.html" class="block">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative h-[65vh] min-h-[450px] flex items-center justify-center text-white">
+    <img
+      src="https://images.unsplash.com/photo-1518998053901-5348d3961a04?auto=format&fit=crop&w=2000&q=85"
+      alt="Cultural celebration"
+      class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-black/55"></div>
+
+    <div class="relative text-center px-6 max-w-3xl">
+      <p class="text-gold uppercase tracking-[0.3em] text-sm mb-5">Traditions & Heritage</p>
+      <h1 class="text-5xl md:text-7xl font-display mb-6">A Culture Rooted<br>in Tradition</h1>
+      <p class="text-lg text-gray-100 leading-8">
+        Discover the stories, customs, art, and community life that shape
+        the cultural identity of Kovilmala and the surrounding region.
+      </p>
+    </div>
+  </section>
+
+  <!-- Intro -->
+  <section class="py-20 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <p class="text-moss uppercase tracking-widest text-sm mb-4">Our heritage</p>
+      <h2 class="text-4xl md:text-5xl font-display text-forest mb-6">
+        More Than a Destination
+      </h2>
+      <p class="text-gray-600 leading-8">
+        The cultural identity of a place lives through its people, traditions,
+        stories, and everyday practices. Explore the heritage of the region
+        with curiosity, respect, and an appreciation for local life.
+      </p>
+    </div>
+  </section>
+
+  <!-- Featured Culture -->
+  <section class="pb-24 px-6">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <img
+        src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=1200&q=85"
+        alt="Community gathering"
+        class="w-full h-[450px] object-cover rounded-2xl">
+
+      <div>
+        <p class="text-moss uppercase tracking-widest text-sm mb-4">People & Community</p>
+        <h2 class="text-4xl md:text-5xl font-display text-forest mb-6">
+          The Heart of Kovilmala
+        </h2>
+        <p class="text-gray-600 leading-8 mb-5">
+          Local communities preserve cultural knowledge through family
+          traditions, shared celebrations, craftsmanship, and stories passed
+          from one generation to the next.
+        </p>
+        <p class="text-gray-600 leading-8">
+          Responsible tourism can help visitors appreciate this heritage
+          while respecting the privacy, values, and choices of local residents.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Culture Cards -->
+  <section class="bg-[#EAEDE3] py-24 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-14">
+        <p class="text-moss uppercase tracking-widest text-sm mb-4">Discover the heritage</p>
+        <h2 class="text-4xl md:text-5xl font-display text-forest">
+          Culture & Traditions
+        </h2>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Festivals -->
+        <article class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition">
+          <img
+            src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&w=1000&q=80"
+            alt="Festival celebration"
+            class="w-full h-64 object-cover">
+          <div class="p-7">
+            <p class="text-xs uppercase tracking-widest text-moss">Celebrations</p>
+            <h3 class="text-2xl font-display text-forest mt-3 mb-4">Festivals & Celebrations</h3>
+            <p class="text-gray-600 text-sm leading-7">
+              Explore the role of festivals, gatherings, and celebrations
+              in bringing communities together throughout the year.
+            </p>
+          </div>
+        </article>
+
+        <!-- Food -->
+        <article class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition">
+          <img
+            src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1000&q=80"
+            alt="Traditional food"
+            class="w-full h-64 object-cover">
+          <div class="p-7">
+            <p class="text-xs uppercase tracking-widest text-moss">Cuisine</p>
+            <h3 class="text-2xl font-display text-forest mt-3 mb-4">Local Food & Cuisine</h3>
+            <p class="text-gray-600 text-sm leading-7">
+              Discover Kerala's rich food culture, traditional cooking
+              practices, and flavors enjoyed across the region.
+            </p>
+          </div>
+        </article>
+
+        <!-- Art -->
+        <article class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition">
+          <img
+            src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=1000&q=80"
+            alt="Art and creative work"
+            class="w-full h-64 object-cover">
+          <div class="p-7">
+            <p class="text-xs uppercase tracking-widest text-moss">Creativity</p>
+            <h3 class="text-2xl font-display text-forest mt-3 mb-4">Arts & Crafts</h3>
+            <p class="text-gray-600 text-sm leading-7">
+              Learn about artistic expression, handmade crafts, and
+              creative traditions that reflect local identity.
+            </p>
+          </div>
+        </article>
+
+        <!-- Heritage -->
+        <article class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition">
+          <img
+            src="https://images.unsplash.com/photo-1518998053901-5348d3961a04?auto=format&fit=crop&w=1000&q=80"
+            alt="Cultural heritage"
+            class="w-full h-64 object-cover">
+          <div class="p-7">
+            <p class="text-xs uppercase tracking-widest text-moss">History</p>
+            <h3 class="text-2xl font-display text-forest mt-3 mb-4">History & Heritage</h3>
+            <p class="text-gray-600 text-sm leading-7">
+              Explore the historical stories, places, and traditions
+              that contribute to the identity of the region.
+            </p>
+          </div>
+        </article>
+
+        <!-- Music -->
+        <article class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition">
+          <img
+            src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=1000&q=80"
+            alt="Music performance"
+            class="w-full h-64 object-cover">
+          <div class="p-7">
+            <p class="text-xs uppercase tracking-widest text-moss">Performance</p>
+            <h3 class="text-2xl font-display text-forest mt-3 mb-4">Music & Dance</h3>
+            <p class="text-gray-600 text-sm leading-7">
+              Discover Kerala's diverse performance traditions, including
+              music, dance, and community celebrations.
+            </p>
+          </div>
+        </article>
+
+        <!-- Nature and Lifestyle -->
+        <article class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition">
+          <img
+            src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=1000&q=80"
+            alt="Nature and rural landscape"
+            class="w-full h-64 object-cover">
+          <div class="p-7">
+            <p class="text-xs uppercase tracking-widest text-moss">Everyday Life</p>
+            <h3 class="text-2xl font-display text-forest mt-3 mb-4">Nature & Lifestyle</h3>
+            <p class="text-gray-600 text-sm leading-7">
+              Understand how the surrounding landscape, agriculture,
+              and everyday life influence the region's identity.
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Responsible Tourism -->
+  <section class="py-24 px-6">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <p class="text-moss uppercase tracking-widest text-sm mb-4">Travel with respect</p>
+        <h2 class="text-4xl md:text-5xl font-display text-forest mb-6">
+          Respect Local Culture
+        </h2>
+        <p class="text-gray-600 leading-8 mb-6">
+          Cultural tourism is most meaningful when visitors respect local
+          customs, traditions, and community spaces.
+        </p>
+
+        <ul class="space-y-4 text-gray-600">
+          <li class="flex gap-3">
+            <span class="text-moss">✓</span>
+            Respect local customs and dress expectations.
+          </li>
+          <li class="flex gap-3">
+            <span class="text-moss">✓</span>
+            Ask permission before taking photographs of people.
+          </li>
+          <li class="flex gap-3">
+            <span class="text-moss">✓</span>
+            Support local artisans and community businesses.
+          </li>
+          <li class="flex gap-3">
+            <span class="text-moss">✓</span>
+            Follow local guidance when visiting cultural or sacred places.
+          </li>
+        </ul>
+      </div>
+
+      <img
+        src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=1200&q=85"
+        alt="Community gathering"
+        class="w-full h-[430px] object-cover rounded-2xl">
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-forest text-white py-20 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <p class="text-gold uppercase tracking-widest text-sm mb-4">Discover the stories</p>
+      <h2 class="text-4xl md:text-5xl font-display mb-6">
+        Experience the Soul of Kovilmala
+      </h2>
+      <p class="text-gray-300 leading-7 mb-8">
+        Plan a visit to discover the culture, heritage, and community life
+        of the region.
+      </p>
+      <a href="contact.html" class="inline-block bg-gold text-forest px-8 py-4 rounded-full font-semibold hover:bg-white transition">
+        Plan Your Visit
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#10291D] text-gray-300 px-6 py-12">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-10">
+      <div>
+        <h2 class="text-3xl font-display text-white mb-4">
+          Kovilmala<span class="text-gold">.</span>
+        </h2>
+        <p class="text-sm leading-7 text-gray-400">
+          Discover the beauty, culture, and natural charm of Kovilmala,
+          Idukki, Kerala.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="text-white font-semibold mb-4">Quick Links</h3>
+        <div class="space-y-2 text-sm">
+          <a href="about.html" class="block hover:text-gold">About</a>
+          <a href="places.html" class="block hover:text-gold">Places</a>
+          <a href="stay.html" class="block hover:text-gold">Stay</a>
+          <a href="services.html" class="block hover:text-gold">Services</a>
+          <a href="travel.html" class="block hover:text-gold">Travel</a>
+          <a href="contact.html" class="block hover:text-gold">Contact</a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="text-white font-semibold mb-4">Explore Kovilmala</h3>
+        <p class="text-sm text-gray-400 leading-7">
+          Experience the landscapes, traditions, and hospitality of
+          Kerala's beautiful high ranges.
+        </p>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto border-t border-white/10 mt-10 pt-6 text-center text-xs text-gray-500">
+      © 2026 Kovilmala Tourism. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- Mobile Menu -->
+  <script>
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+
+</body>
+</html>
